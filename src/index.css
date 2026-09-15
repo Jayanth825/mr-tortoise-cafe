@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-cream: #FAF7F0;
+    --bg-card: #F4EFE6;
+    --bg-card-hover: #EDE6D8;
+    --green-deep: #2F4F3E;
+    --green-accent: #3B5D45;
+    --green-dark: #1B3B2B;
+    --gold-muted: #C5B396;
+    --gold-border: #D4C5A9;
+    --text-main: #1C2B22;
+    --text-muted: #5C6E63;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: var(--bg-cream);
+    color: var(--text-main);
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Custom fine-dining scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5B396;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2F4F3E;
+}
+
+/* Glassmorphism & Fine Dining Panel styling */
+.glass-panel {
+  background: rgba(250, 247, 240, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(47, 79, 62, 0.12);
+}
+
+.glass-pill {
+  background: rgba(47, 79, 62, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(47, 79, 62, 0.15);
+  color: #2F4F3E;
+}
+
+.glass-pill-active {
+  background: #2F4F3E;
+  border: 1px solid #1B3B2B;
+  color: #FAF7F0;
+  box-shadow: 0 4px 14px -2px rgba(47, 79, 62, 0.25);
+}
+
+/* Lightbox touch gesture container */
+.lightbox-touch-target {
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Fine dining serif shimmer text effect */
+.green-shimmer {
+  background: linear-gradient(135deg, #1B3B2B 0%, #2F4F3E 50%, #3B5D45 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Soft elegant card shadow */
+.shadow-fine-dining {
+  box-shadow: 0 8px 30px -6px rgba(47, 79, 62, 0.08), 0 4px 12px -4px rgba(0, 0, 0, 0.03);
+}
