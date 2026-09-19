@@ -11,7 +11,7 @@ const iconMap = {
 
 export const CategoryGrid = ({ categories, onCategoryClick }) => {
   return (
-    <section className="w-full max-w-xl mx-auto px-4 py-8">
+    <section id="menu-section" className="w-full max-w-xl mx-auto px-4 py-8 scroll-mt-6">
       <div className="flex flex-col items-center text-center mb-6">
         <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#1B3B2B] flex items-center justify-center gap-2">
           <span>Photographed Menu Boards</span>
